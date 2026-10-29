@@ -1,0 +1,11 @@
+{
+  "yolo_model_path": "C:\\Users\\cpf\\Downloads\\Knom_Buabarn\\Data\\best.pt",
+  "confidence": 0.24,
+  "strategy": "MAX_Y",
+  "roi": {
+    "x1": 200,
+    "y1": 80,
+    "x2": 1100,
+    "y2": 660
+  }
+}

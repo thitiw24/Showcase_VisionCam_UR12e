@@ -1,0 +1,15 @@
+# ============================================================================
+#  05_send_done.script (Send DONE to Complete Cycle)
+# ============================================================================
+# Sends DONE confirmation back to Python to stop cycle timer and record CSV log
+
+if valid_target and is_connected:
+  done_ok = socket_send_string("DONE", "pc_socket")
+  if done_ok:
+    textmsg("CYCLE DONE sent to PC successfully.")
+  else:
+    textmsg("Failed to send DONE, reconnecting...")
+    socket_close("pc_socket")
+    is_connected = False
+  end
+end

@@ -1,0 +1,21 @@
+[2026-10-28 09:20:40.087] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-28 09:20:40.098] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-28 09:20:42.000] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-28 09:20:42.001] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-28 09:20:42.003] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-28 09:20:42.003] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-28 09:21:13.067] [INFO] [_worker_thread_loop] [WORKER] Worker thread exited gracefully.
+[2026-10-28 17:35:31.709] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-28 17:35:31.710] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-28 17:35:32.292] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-28 17:35:32.293] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-28 17:35:32.294] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-28 17:35:33.785] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-28 17:35:33.785] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-28 17:36:26.427] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-28 17:36:26.428] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-28 17:36:26.745] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-28 17:36:26.746] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-28 17:36:26.746] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-28 17:36:29.083] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-28 17:36:32.576] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.

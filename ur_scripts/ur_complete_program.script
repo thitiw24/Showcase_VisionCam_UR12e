@@ -1,0 +1,119 @@
+# ============================================================================
+#  ur_complete_program.script (All-In-One Complete Loop)
+# ============================================================================
+# Complete monolithic script for standalone execution or complete system reference
+# Supports automatic reconnection if Python restarts or network disconnects
+
+pc_ip = "10.42.5.50"
+pc_port = 5000
+RECONNECT_WAIT = 1.0
+target_class = "CARTON"   # or "EGG"
+
+while True:
+  # -------------------------------------------------------------
+  # 1. Connect to PC (Auto-retry loop)
+  # -------------------------------------------------------------
+  is_connected = False
+  while not is_connected:
+    is_connected = socket_open(pc_ip, pc_port, "pc_socket")
+    if not is_connected:
+      textmsg("Waiting for PC at ", pc_ip)
+      sleep(RECONNECT_WAIT)
+    end
+  end
+
+  textmsg("Connected to PC!")
+  sleep(0.1)
+
+  # Send READY handshake on initial connection
+  ready_ok = socket_send_string("READY", "pc_socket")
+  if not ready_ok:
+    socket_close("pc_socket")
+    continue
+  end
+
+  # -------------------------------------------------------------
+  # 2. Work cycle loop while connection remains healthy
+  # -------------------------------------------------------------
+  session_alive = True
+  while session_alive:
+
+    # 2.1 Send START
+    start_ok = socket_send_string("START", "pc_socket")
+    if not start_ok:
+      session_alive = False
+      break
+    end
+    sleep(0.05)
+
+    # 2.2 Send target workpiece class
+    class_ok = socket_send_string(target_class, "pc_socket")
+    if not class_ok:
+      session_alive = False
+      break
+    end
+
+    # 2.3 Wait for target coordinates from Python (20s timeout guard)
+    data = socket_read_string("pc_socket", timeout=20.0)
+    if data == "":
+      textmsg("TCP WARNING: Timeout (20s) waiting for target from PC.")
+      socket_close("pc_socket")
+      session_alive = False
+      break
+    end
+
+    textmsg("TARGET RECEIVED: ", data)
+
+    # Parse X, Y, Z coordinates
+    comma1 = str_find(data, ",")
+    if comma1 >= 0:
+      x_str = str_sub(data, 0, comma1)
+      rest = str_sub(data, comma1 + 1, str_len(data))
+      comma2 = str_find(rest, ",")
+
+      if comma2 >= 0:
+        y_str = str_sub(rest, 0, comma2)
+        z_str = str_sub(rest, comma2 + 1, str_len(rest))
+
+        x_mm = to_num(x_str)
+        y_mm = to_num(y_str)
+        z_mm = to_num(z_str)
+
+        x_m = x_mm / 1000.0
+        y_m = y_mm / 1000.0
+        z_m = z_mm / 1000.0
+
+        current_pose = get_actual_tcp_pose()
+        rx = current_pose[3]
+        ry = current_pose[4]
+        rz = current_pose[5]
+
+        target_pose = p[x_m, y_m, z_m, rx, ry, rz]
+        before_pose = p[x_m, y_m, z_m + 0.300, rx, ry, rz]
+        after_pose  = p[x_m, y_m, z_m + 0.150, rx, ry, rz]
+
+        # 2.4 Robot motion execution
+        movej(before_pose, a=1.2, v=0.25)
+        movel(target_pose, a=0.5, v=0.10)
+        # --- Gripper / Vacuum ON ---
+        sleep(0.5)
+        movel(after_pose, a=0.5, v=0.15)
+        # --- Place at destination ---
+        movej(before_pose, a=1.2, v=0.25)
+
+        # 2.5 Signal cycle completion
+        done_ok = socket_send_string("DONE", "pc_socket")
+        if not done_ok:
+          session_alive = False
+          break
+        end
+
+        sleep(0.5)
+      end
+    end
+
+  end
+
+  socket_close("pc_socket")
+  sleep(RECONNECT_WAIT)
+end

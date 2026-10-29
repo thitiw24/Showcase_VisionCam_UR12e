@@ -1,0 +1,6 @@
+Things worth acting on
+
+1. Use a USB 3 port and cable for the camera. It is running on USB 2.0, which is likely causing the dropped frames and timeouts.
+2. Look into the failed egg picks at X ≈ −225 mm. The Z (depth) values there drift lower (about −40 to −42 mm, against about −30 mm in the centre). That could be a calibration or depth error at the edge of the camera view.
+3. Don't open two copies of the app at once. They fight over the camera.
+4. The robot program in the repo doesn't match the one actually running. ur_complete_program.script doesn't send the "ROBOT IS …" messages, so the program on the robot is newer. It would help to save that version into ur_scripts/.

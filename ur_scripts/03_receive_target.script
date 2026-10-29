@@ -1,0 +1,75 @@
+# ============================================================================
+#  03_receive_target.script - Knom_Buabarn
+# ============================================================================
+# Waits for target X,Y,Z coordinates in mm from Python
+# Features timeout guard, secondary Z-boundary check, and future 2-Way Handshake hook.
+
+valid_target = False
+
+if is_connected:
+  # 1. อ่านพิกัดแบบมี Timeout กำกับ ป้องกันลูปค้าง
+  data = socket_read_string("pc_socket", timeout=SOCKET_TIMEOUT)
+
+  if data == "":
+    textmsg("TCP WARNING: Timeout waiting for coordinates from PC.")
+    # หากหลุด ให้ปิด Socket เพื่อเตรียมต่อใหม่
+    socket_close("pc_socket")
+    is_connected = False
+  else:
+    textmsg("TARGET RECEIVED: ", data)
+
+    # ------------------------------------------------------------------------
+    # [FUTURE EXTENSION: CASE 3 & 4 - TWO-WAY HANDSHAKE]
+    # หากต้องการเปิดระบบ 2-Way Handshake ให้เปิดบรรทัดล่างนี้:
+    # socket_send_string(str_cat("ACK:", data), "pc_socket")
+    # confirm = socket_read_string("pc_socket", timeout=3.0)
+    # if confirm != "EXECUTE":
+    #     textmsg("Handshake rejected: ", confirm)
+    #     valid_target = False
+    #     return
+    # end
+    # ------------------------------------------------------------------------
+
+    # Parse comma-separated coordinates
+    comma1 = str_find(data, ",")
+    if comma1 >= 0:
+      x_str = str_sub(data, 0, comma1)
+      rest = str_sub(data, comma1 + 1, str_len(data))
+      comma2 = str_find(rest, ",")
+
+      if comma2 >= 0:
+        y_str = str_sub(rest, 0, comma2)
+        z_str = str_sub(rest, comma2 + 1, str_len(rest))
+
+        x_mm = to_num(x_str)
+        y_mm = to_num(y_str)
+        z_mm = to_num(z_str)
+
+        # Convert mm -> m
+        x_m = x_mm / 1000.0
+        y_m = y_mm / 1000.0
+        z_m = z_mm / 1000.0
+
+        # 2. Case 1 Secondary Safety Guard on UR
+        if (z_m < UR_SAFE_Z_MIN) or (z_m > UR_SAFE_Z_MAX):
+          textmsg("UR SAFETY ALERT: Target Z (", z_m, " m) violates conveyor boundary! Aborted.")
+          valid_target = False
+        else:
+          # Retain current tool orientation (rx, ry, rz)
+          current_pose = get_actual_tcp_pose()
+          rx = current_pose[3]
+          ry = current_pose[4]
+          rz = current_pose[5]
+
+          # Construct Poses
+          target_pose = p[x_m, y_m, z_m, rx, ry, rz]
+          before_pose = p[x_m, y_m, z_m + 0.300, rx, ry, rz]   # 300 mm approach
+          after_pose  = p[x_m, y_m, z_m + 0.150, rx, ry, rz]   # 150 mm lift
+
+          valid_target = True
+          textmsg("Calculated Target Pose: ", target_pose)
+        end
+      end
+    end
+  end
+end

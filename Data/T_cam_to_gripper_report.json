@@ -1,0 +1,39 @@
+{
+  "camera_model": "Orbbec Gemini 2",
+  "robot_model": "UR12e",
+  "type": "Eye-in-Hand",
+  "session": "c:\\Users\\User\\OneDrive\\\u0e40\u0e14\u0e2a\u0e01\u0e4c\u0e17\u0e47\u0e2d\u0e1b\\AMyFolder\\PANG\\CPF\\Propak_Resurrect\\Pramgro\\handeye_eih_data\\session_20260824_114736",
+  "date": "2026-08-24T12:07:28.659934",
+  "original_poses": 40,
+  "unique_poses": 40,
+  "rotation_span_deg": 42.051125442040195,
+  "best_method": "TSAI",
+  "rot_error_deg": 64.8089798186894,
+  "trans_error_mm": 58.805966604405796,
+  "T_cam_to_gripper": [
+    [
+      0.004503258795584886,
+      0.9999753007745682,
+      0.005396156134878361,
+      -136.9262896199404
+    ],
+    [
+      -0.9997993717004046,
+      0.004397013220102108,
+      0.019541817270114822,
+      17.48828864429965
+    ],
+    [
+      0.019517607632501925,
+      -0.005483075373752029,
+      0.999794478318794,
+      -107.65773382941549
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

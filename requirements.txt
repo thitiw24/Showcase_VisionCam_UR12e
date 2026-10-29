@@ -1,0 +1,17 @@
+# Dependencies for Knom_Propak (Robot Vision System)
+# Installation command: pip install -r requirements.txt
+
+# Computer Vision & Arrays
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Deep Learning & YOLO
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+
+# Universal Robots Communication
+ur_rtde>=1.5.0
+
+# Orbbec Camera SDK (PyPI package: pyorbbecsdk2, imported as pyorbbecsdk)
+pyorbbecsdk2>=2.1.0

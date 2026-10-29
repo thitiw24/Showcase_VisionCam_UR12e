@@ -1,0 +1,25 @@
+# ============================================================================
+#  01_connection_ready.script (Connect & Handshake READY)
+# ============================================================================
+# Resilient connection loop to Python TCP Server (Never halts)
+# Sends "READY" handshake message to Python upon successful connection
+
+is_connected = False
+while not is_connected:
+  is_connected = socket_open(pc_ip, pc_port, "pc_socket")
+  if not is_connected:
+    textmsg("Waiting for PC connection at ", pc_ip)
+    sleep(RECONNECT_WAIT)
+  end
+end
+
+textmsg("Connected to PC at ", pc_ip)
+sleep(0.1)
+
+# Send READY handshake confirming initial connection
+ready_ok = socket_send_string("READY", "pc_socket")
+if not ready_ok:
+  textmsg("Failed to send READY, reconnecting...")
+  socket_close("pc_socket")
+  is_connected = False
+end

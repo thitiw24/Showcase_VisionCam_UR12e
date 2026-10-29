@@ -1,0 +1,20 @@
+# ============================================================================
+#  00_init_variables.script - Knom_Buabarn
+# ============================================================================
+# Initialize variables for TCP connection with PC Python vision service (UR12e)
+
+pc_ip = "10.42.5.50"         # IP ของคอมพิวเตอร์ Vision
+pc_port = 5000               # TCP Port ที่ตรงกับ main.py
+RECONNECT_WAIT = 1.0         # เวลาหน่วงตอนเชื่อมต่อหลุด (วินาที)
+SOCKET_TIMEOUT = 20.0        # ขีดจำกัดเวลารอข้อมูลจาก PC ป้องกันลูปค้าง (15-20 วินาทีตาม Cycle Time จริง)
+
+# ----------------------------------------------------------------------------
+# Secondary Safety Boundary on UR Cobot (Case 1 Defense in Depth)
+# ขอบเขตความปลอดภัยสำรองบนหุ่นยนต์ (เมตร) ป้องกันชนสายพาน
+# ----------------------------------------------------------------------------
+UR_SAFE_Z_MIN = -0.060       # -60 mm ห้ามต่ำกว่าผิวสายพานเด็ดขาด
+UR_SAFE_Z_MAX = 0.080        # +80 mm ห้ามสูงเกินจริง
+
+is_connected = False
+valid_target = False
+target_class = "CARTON"      # ค่าเริ่มต้น ("CARTON" หรือ "EGG")

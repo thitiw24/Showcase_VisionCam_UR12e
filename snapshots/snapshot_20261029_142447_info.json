@@ -1,0 +1,42 @@
+{
+  "timestamp": "20261029_142447",
+  "current_model": "best.pt",
+  "target_class_override": "Auto (Robot)",
+  "telemetry": {
+    "cam_connected": true,
+    "ur_connected": false,
+    "rtde_connected": true,
+    "fps": 9.999651920990834,
+    "target_class": "NONE",
+    "conf": 0.0,
+    "xyz": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pixel": [
+      0,
+      0
+    ],
+    "jitter": 0.0,
+    "is_stable": false,
+    "cycle": 26,
+    "cycle_time": 8.42879019999964,
+    "safety_status": "WAITING",
+    "safety_reason": "Waiting for Target",
+    "banner_text": "STATE: WAIT_START | Filter: None",
+    "banner_color": "#3b82f6"
+  },
+  "safety_config": {
+    "Z_MIN_MM": -60.0,
+    "Z_MAX_MM": 80.0,
+    "X_MIN_MM": -320.0,
+    "X_MAX_MM": 20.0,
+    "Y_MIN_MM": -1020.0,
+    "Y_MAX_MM": -400.0,
+    "TARGET_ROBOT_IP": "10.42.5.151",
+    "PC_IP": "10.42.5.50",
+    "RTDE_PORT": 30004,
+    "RTDE_RETRY_INTERVAL_S": 3.0
+  }
+}

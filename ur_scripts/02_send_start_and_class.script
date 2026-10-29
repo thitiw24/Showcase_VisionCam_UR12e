@@ -1,0 +1,28 @@
+# ============================================================================
+#  02_send_start_and_class.script (Send START & Class Filter)
+# ============================================================================
+# Sends START command to initiate cycle and trigger timer in Python
+# Followed by target class string ("CARTON" or "EGG") for YOLO filtering
+
+if is_connected:
+  # 1. Send START
+  start_ok = socket_send_string("START", "pc_socket")
+  if not start_ok:
+    textmsg("Failed to send START, reconnecting...")
+    socket_close("pc_socket")
+    is_connected = False
+  else:
+    textmsg("START sent to PC")
+    sleep(0.05)
+
+    # 2. Send requested target class (e.g. "CARTON" or "EGG")
+    class_ok = socket_send_string(target_class, "pc_socket")
+    if not class_ok:
+      textmsg("Failed to send Target Class, reconnecting...")
+      socket_close("pc_socket")
+      is_connected = False
+    else:
+      textmsg("Target class sent: ", target_class)
+    end
+  end
+end

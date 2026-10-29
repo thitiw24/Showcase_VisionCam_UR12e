@@ -1,0 +1,315 @@
+[2026-10-29 10:10:29.417] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 10:10:29.418] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 10:10:29.859] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 10:10:29.860] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 10:10:29.861] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 10:10:31.565] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 10:10:31.566] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 12:32:16.044] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 12:32:16.045] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 12:32:16.382] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 12:32:16.384] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 12:32:16.385] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 12:32:17.846] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 12:32:17.847] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 12:32:17.865] [INFO] [_worker_thread_loop] [RTDE] Connected strictly to UR at 10.42.5.151
+[2026-10-29 12:32:22.686] [INFO] [_worker_thread_loop] [TCP] UR connected from 10.42.5.151:42964
+[2026-10-29 12:32:23.727] [INFO] [_worker_thread_loop] [TCP RECV] 'READY'
+[2026-10-29 12:32:24.717] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:32:25.715] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 12:32:26.915] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-7.59, Y=-510.93, Z=-30.65 mm
+[2026-10-29 12:32:26.954] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:32:36.811] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:32:40.858] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:32:56.864] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:32:57.865] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:33:03.695] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 12:33:04.140] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-7.29, Y=-510.92, Z=-31.68 mm
+[2026-10-29 12:33:04.177] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:33:05.787] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:33:06.435] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:33:08.283] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:33:09.966] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 12:33:11.034] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 12:33:12.779] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 12:33:15.945] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 12:33:16.883] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:33:17.869] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 12:33:51.028] [WARNING] [_worker_thread_loop] [TCP] UR disconnected -> Waiting for reconnect
+[2026-10-29 12:33:57.221] [INFO] [_worker_thread_loop] [TCP] UR connected from 10.42.5.151:44564
+[2026-10-29 12:33:58.340] [INFO] [_worker_thread_loop] [TCP RECV] 'READY'
+[2026-10-29 12:33:59.334] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:34:00.332] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 12:34:11.744] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-117.31, Y=-511.27, Z=-38.21 mm
+[2026-10-29 12:34:11.891] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:34:13.395] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:34:14.026] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:34:15.735] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:34:17.696] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 12:34:18.757] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 12:34:20.519] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 12:34:23.598] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 12:34:24.563] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:34:25.564] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 12:34:25.975] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-225.99, Y=-512.92, Z=-45.47 mm
+[2026-10-29 12:34:26.012] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:34:27.617] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:34:28.310] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:34:29.928] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:34:32.115] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 12:34:39.901] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 12:34:41.705] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 12:34:44.729] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 12:34:45.727] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:34:46.730] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 12:34:47.144] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-4.34, Y=-661.27, Z=-36.83 mm
+[2026-10-29 12:34:47.181] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:34:48.733] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:34:49.398] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:34:51.030] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:34:52.867] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 12:34:54.256] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 12:34:55.999] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 12:34:59.136] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 12:35:00.135] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:35:02.564] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:35:02.928] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-25.71, Y=-979.63, Z=-30.42 mm
+[2026-10-29 12:35:02.970] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:35:04.064] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:35:04.788] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:35:06.365] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:35:08.291] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 12:35:09.633] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 12:35:11.566] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 12:35:14.667] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 12:35:15.669] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:35:16.655] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:35:17.004] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-120.92, Y=-984.86, Z=-35.81 mm
+[2026-10-29 12:35:17.040] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:35:18.121] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:35:18.765] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:35:20.566] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:35:22.532] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 12:35:23.999] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 12:35:26.002] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 12:35:29.166] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 12:35:30.158] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:35:31.162] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:35:31.549] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-224.71, Y=-991.94, Z=-39.67 mm
+[2026-10-29 12:35:31.598] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:35:32.651] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:35:33.327] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:35:40.690] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:35:41.690] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:35:43.644] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:35:44.038] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-224.86, Y=-991.89, Z=-40.66 mm
+[2026-10-29 12:35:44.156] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:35:45.142] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:35:45.793] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:35:53.166] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:35:54.202] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:35:56.135] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:35:56.528] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-225.14, Y=-992.01, Z=-41.42 mm
+[2026-10-29 12:35:56.645] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:35:57.633] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:35:58.298] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:36:17.101] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:36:18.101] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:36:20.019] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:36:20.405] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-224.11, Y=-988.93, Z=-41.36 mm
+[2026-10-29 12:36:20.457] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:36:21.508] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:36:22.154] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:36:36.490] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:36:37.492] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:36:39.391] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:36:39.785] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-225.38, Y=-991.55, Z=-40.66 mm
+[2026-10-29 12:36:39.902] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:36:40.903] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:36:41.566] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:36:48.995] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:36:49.984] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:36:51.819] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:36:52.234] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-206.08, Y=-990.16, Z=-38.74 mm
+[2026-10-29 12:36:52.272] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:36:53.364] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:36:53.983] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:37:01.363] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:37:02.384] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 12:37:04.190] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 12:37:04.635] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-131.49, Y=-982.95, Z=-36.26 mm
+[2026-10-29 12:37:04.673] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 12:37:05.752] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 12:37:06.433] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 12:37:08.064] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 12:37:10.124] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 12:37:11.466] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 12:37:13.394] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 12:37:16.486] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 14:19:51.898] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:19:52.900] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 14:19:53.314] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-29.98, Y=-510.11, Z=-32.76 mm
+[2026-10-29 14:19:53.365] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:19:54.952] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:19:55.600] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:19:57.229] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:19:59.053] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 14:20:00.133] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 14:20:01.853] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 14:20:04.953] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 14:20:06.004] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:20:06.946] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 14:20:07.420] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-129.04, Y=-512.75, Z=-40.89 mm
+[2026-10-29 14:20:07.457] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:20:09.071] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:20:09.733] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:20:11.361] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:20:13.360] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 14:20:17.927] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 14:20:19.629] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 14:20:22.765] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 14:20:23.760] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:20:24.764] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 14:20:25.180] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-229.15, Y=-523.99, Z=-46.56 mm
+[2026-10-29 14:20:25.216] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:20:26.823] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:20:27.501] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:20:29.163] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:20:31.317] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 14:20:36.596] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 14:20:38.260] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 14:20:41.396] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 14:20:42.398] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:20:44.818] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 14:20:45.295] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-33.91, Y=-976.17, Z=-29.58 mm
+[2026-10-29 14:20:45.327] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:20:46.425] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:20:47.105] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:20:48.735] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:20:50.666] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 14:20:54.258] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 14:20:56.228] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 14:20:59.295] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 14:21:00.288] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:21:01.287] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 14:21:01.716] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-135.16, Y=-977.76, Z=-37.01 mm
+[2026-10-29 14:21:01.754] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:21:02.831] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:21:03.582] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:21:05.201] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:21:07.370] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 14:21:11.284] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 14:21:13.384] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 14:21:16.372] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 14:21:17.472] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:21:18.487] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 14:21:18.911] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-229.74, Y=-987.45, Z=-40.22 mm
+[2026-10-29 14:21:18.979] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:21:20.173] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:21:20.773] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:21:28.030] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:21:29.027] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:21:30.957] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 14:21:31.353] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-230.71, Y=-986.63, Z=-42.22 mm
+[2026-10-29 14:21:31.466] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:21:32.561] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:21:33.128] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:21:40.502] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:21:41.488] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:21:43.333] [INFO] [_worker_thread_loop] [TCP RECV] 'EGG'
+[2026-10-29 14:21:43.685] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-156.50, Y=-985.41, Z=-34.82 mm
+[2026-10-29 14:21:43.724] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:21:44.801] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:21:45.432] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:21:47.094] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:21:49.237] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PLACE POSITION'
+[2026-10-29 14:21:50.465] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PLACE POSITION'
+[2026-10-29 14:21:52.543] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PLACE OBJECT'
+[2026-10-29 14:21:55.502] [INFO] [_worker_thread_loop] [TCP RECV] 'DONE'
+[2026-10-29 14:22:55.578] [WARNING] [_worker_thread_loop] [TCP] UR disconnected -> Waiting for reconnect
+[2026-10-29 14:24:07.494] [INFO] [_worker_thread_loop] [TCP] UR connected from 10.42.5.151:57172
+[2026-10-29 14:24:08.618] [INFO] [_worker_thread_loop] [TCP RECV] 'READY'
+[2026-10-29 14:24:09.617] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:24:10.606] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 14:24:13.392] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-114.41, Y=-657.85, Z=-42.83 mm
+[2026-10-29 14:24:13.514] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:24:15.107] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:24:15.661] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:24:23.005] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:24:24.008] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:24:26.207] [INFO] [_worker_thread_loop] [TCP RECV] 'CARTON'
+[2026-10-29 14:24:28.593] [INFO] [_send_target_coordinates] [PRE-TRANSMISSION] Sending Target Coordinates to UR: X=-117.47, Y=-654.70, Z=-44.11 mm
+[2026-10-29 14:24:28.697] [INFO] [_worker_thread_loop] [TCP RECV] 'UR GETS ROBOT POSE'
+[2026-10-29 14:24:30.191] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS GOING TO PICK POSITION'
+[2026-10-29 14:24:30.902] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS AT PICKING POSITION'
+[2026-10-29 14:24:38.222] [INFO] [_worker_thread_loop] [TCP RECV] 'ROBOT IS ALREADY PICK OBJECT'
+[2026-10-29 14:24:39.217] [INFO] [_worker_thread_loop] [TCP RECV] 'START'
+[2026-10-29 14:24:40.173] [WARNING] [_worker_thread_loop] [TCP] UR disconnected -> Waiting for reconnect
+[2026-10-29 14:24:47.739] [INFO] [_save_snapshot] [SNAPSHOT] Saved snapshot set (3 files): snapshot_20261029_142447_rgb.jpg, snapshot_20261029_142447_depth.png, snapshot_20261029_142447_info.json
+[2026-10-29 15:38:19.131] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 15:38:19.131] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 15:38:19.428] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 15:38:19.429] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 15:38:19.430] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 15:38:20.867] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:38:20.868] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 15:38:40.537] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 15:38:40.538] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 15:38:40.893] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 15:38:40.894] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 15:38:40.895] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 15:38:42.336] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:38:42.337] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 15:51:53.993] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 15:51:53.994] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 15:51:54.291] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 15:51:54.292] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 15:51:54.292] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 15:51:55.786] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:51:55.786] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 15:52:16.824] [INFO] [trigger_firmware_soft_reboot] [CAMERA] ส่งคำสั่ง Firmware Soft-Reboot สู่กล้อง...
+[2026-10-29 15:52:39.736] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:52:39.737] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:53:00.788] [INFO] [trigger_firmware_soft_reboot] [CAMERA] ส่งคำสั่ง Firmware Soft-Reboot สู่กล้อง...
+[2026-10-29 15:53:24.173] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:53:24.538] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:54:10.368] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 15:54:10.369] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 15:54:10.687] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 15:54:10.688] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 15:54:10.689] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 15:54:12.144] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 15:54:12.145] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 16:05:02.106] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 16:05:02.108] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 16:05:02.449] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 16:05:02.451] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 16:05:02.452] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 16:05:02.452] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 16:05:35.220] [INFO] [_worker_thread_loop] [WORKER] Worker thread exited gracefully.
+[2026-10-29 16:06:27.582] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 16:06:27.582] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 16:06:27.931] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 16:06:27.932] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 16:06:27.933] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 16:06:29.474] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 16:06:29.475] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 16:07:06.855] [INFO] [trigger_firmware_soft_reboot] [CAMERA] ส่งคำสั่ง Firmware Soft-Reboot สู่กล้อง...
+[2026-10-29 16:07:06.856] [WARNING] [trigger_firmware_soft_reboot] [CAMERA] Firmware reboot warning: Device is deactivated/disconnected! DeviceComponentId:0
+[2026-10-29 16:14:06.304] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 16:14:06.304] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 16:14:06.657] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 16:14:06.659] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 16:14:06.659] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 16:14:08.200] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 16:14:08.201] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 16:14:28.941] [WARNING] [_check_frame_watchdog] [CAMERA] No valid frames for 3 s -> marking disconnected for auto-reconnect
+[2026-10-29 16:14:55.716] [INFO] [_load_calibrations] [INIT] Loaded Camera Intrinsic Matrix successfully.
+[2026-10-29 16:14:55.716] [INFO] [_load_calibrations] [INIT] Loaded Hand-Eye Matrix successfully.
+[2026-10-29 16:14:56.035] [INFO] [_update_dynamic_class_mapping] [MODEL] Dynamic Class Map updated: {'EGG': [0], 'BLUEBOX': [1], 'REDBOX': [2], 'CARTON': [1, 2], 'ALL': [0, 1, 2]}
+[2026-10-29 16:14:56.036] [INFO] [load_yolo_model] [MODEL] Loaded best.pt (Classes: ['Egg', 'BlueBox', 'RedBox'])
+[2026-10-29 16:14:56.037] [INFO] [_init_tcp_server] [TCP] Server listening on port 5000 (Host PC: 10.42.5.50)
+[2026-10-29 16:14:57.476] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.
+[2026-10-29 16:14:57.477] [INFO] [_worker_thread_loop] [WORKER] Background Vision & Safety Worker thread started.
+[2026-10-29 16:15:25.124] [WARNING] [_check_frame_watchdog] [CAMERA] No valid frames for 3 s -> marking disconnected for auto-reconnect
+[2026-10-29 16:15:51.275] [INFO] [connect] [CAMERA] Orbbec Gemini 2 pipeline connected successfully.

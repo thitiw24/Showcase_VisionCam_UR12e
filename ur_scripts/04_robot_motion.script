@@ -1,0 +1,33 @@
+# ============================================================================
+#  04_robot_motion.script (Robot Movement & Gripper)
+# ============================================================================
+# Motion trajectory towards target, grasp/vacuum activation, and lift
+# Note: Adjust gripper commands (Vacuum ON/OFF) per your URCap or Digital I/O
+
+if valid_target:
+  textmsg("Moving to target...")
+
+  # 1. Move to approach pose above target
+  movej(before_pose, a=1.2, v=0.25)
+
+  # 2. Descend to target pick pose
+  movel(target_pose, a=0.5, v=0.10)
+
+  # --- Activate Gripper / Vacuum ON ---
+  # Example for Robotiq or standard digital I/O:
+  # set_standard_digital_out(0, True)
+  sleep(0.5)
+
+  # 3. Lift workpiece to safe intermediate pose
+  movel(after_pose, a=0.5, v=0.15)
+
+  # --- Move to Place Position ---
+  # Place workpiece at designated destination, e.g. movej(place_pose)
+  # Deactivate Gripper / Vacuum OFF
+  # set_standard_digital_out(0, False)
+  # sleep(0.3)
+
+  # 4. Return to approach / home pose
+  movej(before_pose, a=1.2, v=0.25)
+  textmsg("Pick and place motion finished.")
+end
