@@ -2,6 +2,9 @@
 
 โฟลเดอร์นี้รวบรวมเครื่องมือสำหรับทดสอบฮาร์ดแวร์ การตรวจจับ และการคาลิเบรตแต่ละส่วนแยกกัน เพื่อความสะดวกในการตรวจเช็กและแก้ไขปัญหา
 
+> 💡 **คู่มือการสอบเทียบกล้องและกริปเปอร์เชิงลึก:**  
+> ดูขั้นตอนการรัน Hand-Eye และแนวทางการใช้ค่า Factory Intrinsic โดยละเอียดได้ที่ **[CALIBRATION_GUIDE.md](CALIBRATION_GUIDE.md)**
+
 ---
 
 ## รายชื่อไฟล์และหน้าที่การทำงาน (Files & Functions)
@@ -21,10 +24,10 @@
   * เปิดกล้องสด ตรวจจับวัตถุ คำนวณพิกัด 3D Base ของหุ่นยนต์ และกดปุ่ม `G` บนคีย์บอร์ดเพื่อแสดงพิกัดที่จะส่งให้หุ่นยนต์ (โดยไม่ต้องเปิด TCP Server)
 
 ### 3. หมวดการคาลิเบรต (Calibration)
-* **`calibrate_camera_intrinsic.py`** (เดิม: `Cam_Calb_Full02.py`)
-  * ถ่ายภาพกระดานหมากรุก (Chessboard) เพื่อคำนวณค่าความบิดเบี้ยวและ Intrinsic Matrix ของเลนส์กล้อง
 * **`calibrate_hand_eye.py`** (เดิม: `eye-in-hand-07.py`)
-  * โปรแกรมเต็มสำหรับการทำ Eye-in-Hand Calibration เพื่อหาความสัมพันธ์ระหว่างกล้องกับกริปเปอร์หุ่นยนต์ (`T_cam_to_gripper.npz`)
+  * โปรแกรมเต็มสำหรับการทำ Eye-in-Hand Calibration เพื่อหาความสัมพันธ์ระหว่างกล้องกับกริปเปอร์หุ่นยนต์ (`T_cam_to_gripper.npz`) **(รองรับ Factory Intrinsic จากตัวกล้องโดยตรง)**
+* **`calibrate_camera_intrinsic.py`** (เดิม: `Cam_Calb_Full02.py`)
+  * ถ่ายภาพกระดานหมากรุก (Chessboard) เพื่อคำนวณค่าความบิดเบี้ยวและ Intrinsic Matrix ของเลนส์กล้อง (ใช้เมื่อต้องการทำ Manual Calibration หรือสร้าง `calibration.npz` สำรอง)
 
 ### 4. หมวดเครื่องมือจัดการวิดีโอและเทรนโมเดล (Video & Training Tools)
 * **`capture_camera_video.py`** (เดิม: `CamVideo.py`)
@@ -34,7 +37,7 @@
 * **`train_yolo_model.py`** (เดิม: `yolo_train.py`)
   * สคริปต์สำหรับสั่งเทรนโมเดล YOLO เพิ่มเติมจาก Dataset
 
-### 5. สคริปต์ดั้งเดิม (Legacy)
+### 5. สคริปต์ดั้งเดิมและยูทิลิตี้ (Legacy & Utilities)
 * **`legacy_cycle_detector.py`** (เดิม: `detect_to_robot_justBest.py`)
   * สคริปต์เวอร์ชันทดสอบเดิมที่รองรับคลาส `BLUE` ควบคู่กับ `CARTON` และ `EGG`
 * **`utils.py`**
